@@ -69,7 +69,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title and subtitle (centered)
-st.markdown("<h1> Smart Sprinkler System </h1>", unsafe_allow_html=True)
+st.markdown("<h1> Smart Irrigation System </h1>", unsafe_allow_html=True)
 st.markdown("<h3>🌱 Scaled Sensor Inputs (0 to 1)</h3>", unsafe_allow_html=True)
 
 # Layout for sliders
@@ -101,7 +101,7 @@ if predict_clicked:
     st.markdown("<h2>🌿 Sprinkler Status</h2>", unsafe_allow_html=True)
     for i, status in enumerate(prediction):
         st.markdown(
-            f"<div class='custom-box'>Sprinkler {i} (parcel_{i}): {'💡 ON' if status == 1 else '❌ OFF'}</div>",
+            f"<div class='custom-box'>Pump {i} (parcel_{i}): {'💡 ON' if status == 1 else '❌ OFF'}</div>",
             unsafe_allow_html=True
         )
     st.markdown('</div>', unsafe_allow_html=True)
